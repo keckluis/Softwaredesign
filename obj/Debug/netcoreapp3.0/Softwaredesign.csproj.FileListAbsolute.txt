@@ -1,0 +1,11 @@
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.csprojAssemblyReference.cache
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.AssemblyInfoInputs.cache
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.AssemblyInfo.cs
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.exe
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.deps.json
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.runtimeconfig.json
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.runtimeconfig.dev.json
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.dll
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.pdb
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.dll
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.pdb

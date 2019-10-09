@@ -1,0 +1,11 @@
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\bin\Debug\netcoreapp3.0\A1_Buchstabendreher.exe
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\bin\Debug\netcoreapp3.0\A1_Buchstabendreher.deps.json
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\bin\Debug\netcoreapp3.0\A1_Buchstabendreher.runtimeconfig.json
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\bin\Debug\netcoreapp3.0\A1_Buchstabendreher.runtimeconfig.dev.json
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\bin\Debug\netcoreapp3.0\A1_Buchstabendreher.dll
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\bin\Debug\netcoreapp3.0\A1_Buchstabendreher.pdb
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\obj\Debug\netcoreapp3.0\A1_Buchstabendreher.csprojAssemblyReference.cache
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\obj\Debug\netcoreapp3.0\A1_Buchstabendreher.AssemblyInfoInputs.cache
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\obj\Debug\netcoreapp3.0\A1_Buchstabendreher.AssemblyInfo.cs
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\obj\Debug\netcoreapp3.0\A1_Buchstabendreher.dll
+C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\A1_Buchstabendreher\obj\Debug\netcoreapp3.0\A1_Buchstabendreher.pdb

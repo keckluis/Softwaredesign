@@ -1,9 +1,13 @@
 using System;
 
-namespace Softwaredesign
-{
-    class ToDo02
-    {
+namespace L02_ProgrammierenInC__1 {
+    
+    class ToDo02 {
+
+        public static void Main(string[] args) {
+
+            taskOne();
+        }
         public static void taskOne() {
 
             var i = 42;

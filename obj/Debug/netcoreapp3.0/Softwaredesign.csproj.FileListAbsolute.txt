@@ -9,3 +9,14 @@ C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\b
 C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.pdb
 C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.dll
 C:\Users\Luis\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.pdb
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.exe
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.deps.json
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.runtimeconfig.json
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.runtimeconfig.dev.json
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.dll
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\bin\Debug\netcoreapp3.0\Softwaredesign.pdb
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.csprojAssemblyReference.cache
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.AssemblyInfoInputs.cache
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.AssemblyInfo.cs
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.dll
+C:\Users\luis9\Documents\HFU\Semester5\Softwaredesign\Repository\Softwaredesign\obj\Debug\netcoreapp3.0\Softwaredesign.pdb

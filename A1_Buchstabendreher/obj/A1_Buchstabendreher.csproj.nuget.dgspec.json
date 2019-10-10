@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luis\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {}
+    "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luis\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {
+    "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luis\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
+        "projectUniqueName": "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
         "projectName": "A1_Buchstabendreher",
-        "projectPath": "C:\\Users\\Luis\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
-        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luis\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\obj\\",
+        "projectPath": "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
+        "packagesPath": "C:\\Users\\luis9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\luis9\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

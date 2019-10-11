@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "L03_Debugging/1.0.0": {
+        "runtime": {
+          "L03_Debugging.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "L03_Debugging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

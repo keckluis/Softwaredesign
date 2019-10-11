@@ -2,7 +2,7 @@ using System;
 
 namespace L02_ProgrammierenInC__1 {
     
-    class ToDo02 {
+    class L03 {
 
         public static void Main(string[] args) {
 

@@ -1,0 +1,11 @@
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\bin\Debug\netcoreapp3.0\L03_Debugging.exe
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\bin\Debug\netcoreapp3.0\L03_Debugging.deps.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\bin\Debug\netcoreapp3.0\L03_Debugging.runtimeconfig.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\bin\Debug\netcoreapp3.0\L03_Debugging.runtimeconfig.dev.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\bin\Debug\netcoreapp3.0\L03_Debugging.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\bin\Debug\netcoreapp3.0\L03_Debugging.pdb
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\obj\Debug\netcoreapp3.0\L03_Debugging.csprojAssemblyReference.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\obj\Debug\netcoreapp3.0\L03_Debugging.AssemblyInfoInputs.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\obj\Debug\netcoreapp3.0\L03_Debugging.AssemblyInfo.cs
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\obj\Debug\netcoreapp3.0\L03_Debugging.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\L03_Debugging\obj\Debug\netcoreapp3.0\L03_Debugging.pdb

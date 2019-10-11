@@ -14,19 +14,55 @@ namespace A1_Buchstabendreher {
             Console.WriteLine(sentence + "\n" + words + "\n" + letters);
         }
 
-        static string reverseLetters(string s) {
+        static string reverseLetters(string input) {
+            
+            string output = "";
 
-            return s;
+            string[] words = input.Split(" ");
+
+            foreach(string word in words) {
+
+                string temp = "";
+
+                foreach(char ch in word.ToCharArray()) {
+                    
+                    temp = ch + temp;
+                }
+                output = temp + " " + output;
+            }
+            return output;
         }
 
-        static string reverseWords(string s) {
+        static string reverseWords(string input) {
 
-            return s;
+            string output = "";
+
+            string[] words = input.Split(" ");
+
+            for(int i = words.Length-1; i >= 0; i--) {
+
+                output += words[i] + " ";
+            }
+            return output;
         }
 
-        static string reverseSentence(string s) {
+        static string reverseSentence(string input) {
 
-            return s;
+            string output = "";
+
+            string[] words = input.Split(" ");
+
+            foreach(string word in words) {
+
+                string temp = "";
+
+                foreach(char ch in word.ToCharArray()) {
+                    
+                    temp = ch + temp;
+                }
+                output += temp + " ";
+            }
+            return output;
         }
     }
 }

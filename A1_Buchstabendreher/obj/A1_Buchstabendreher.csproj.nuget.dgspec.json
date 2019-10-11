@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {}
+    "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {
+    "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
+        "projectUniqueName": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
         "projectName": "A1_Buchstabendreher",
-        "projectPath": "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
+        "projectPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A1_Buchstabendreher\\A1_Buchstabendreher.csproj",
         "packagesPath": "C:\\Users\\luis9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luis9\\Documents\\HFU\\Semester5\\Softwaredesign\\Repository\\Softwaredesign\\A1_Buchstabendreher\\obj\\",
+        "outputPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A1_Buchstabendreher\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

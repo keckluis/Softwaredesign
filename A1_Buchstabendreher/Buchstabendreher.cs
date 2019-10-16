@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace A1_Buchstabendreher {
-    
-    class Buchstabendreher {
-        static void Main(string[] args) {
-
+namespace A1_Buchstabendreher
+{
+    class Buchstabendreher
+    {
+        static void Main(string[] args)
+        {
             Console.WriteLine("Bitte einen kleinen Satz eingeben");
             Console.Write("> ");
             var text = Console.ReadLine();
@@ -14,24 +15,24 @@ namespace A1_Buchstabendreher {
             Console.WriteLine(sentence + "\n" + words + "\n" + letters);
         }
 
-        static string reverseLetters(string input) {
-            
-            char [] temp = input.ToCharArray();
+        static string reverseLetters(string input)
+        {
+            char[] temp = input.ToCharArray();
             Array.Reverse(temp);
 
             return new String(temp);
         }
 
-        static string reverseWords(string input) {
-
-            string [] temp = input.Split(" ");
+        static string reverseWords(string input)
+        {
+            string[] temp = input.Split(" ");
             Array.Reverse(temp);
 
             return string.Join(" ", temp);
         }
 
-        static string reverseSentence(string input) {
-
+        static string reverseSentence(string input)
+        {
             return reverseWords(reverseLetters(input));
         }
     }

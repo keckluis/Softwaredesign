@@ -6,7 +6,6 @@ namespace L03_Debugging
 
     public class Person
     {
-
         public string FirstName;
         public string LastName;
         public DateTime DateOfBirth;
@@ -17,7 +16,6 @@ namespace L03_Debugging
 
         public override string ToString()
         {
-
             if (DateOfDeath.Year == 1)
             {
                 return (FirstName + " " + LastName + ", " + DateOfBirth.Year + "-*");
@@ -34,7 +32,6 @@ namespace L03_Debugging
     {
         public static Person Find(Person person)
         {
-
             Person ret = null;
 
             if (person.LastName == "ElGreco")
@@ -57,7 +54,6 @@ namespace L03_Debugging
 
         public static Person BuildTree()
         {
-
             return
                 new Person
                 {

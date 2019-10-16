@@ -1,15 +1,15 @@
 using System;
 
-namespace L02_ProgrammierenInC__1 {
-    
-    class L03 {
-
-        public static void Main(string[] args) {
-
+namespace L02_ProgrammierenInC__1
+{
+    class L03
+    {
+        public static void Main(string[] args)
+        {
             taskOne();
         }
-        public static void taskOne() {
-
+        public static void taskOne()
+        {
             var i = 42;
             var pi = 3.1415;
             var salute = "Hello, World";
@@ -23,9 +23,9 @@ namespace L02_ProgrammierenInC__1 {
             //var variable2 = 0.0f;//float
         }
 
-        public static void taskTwo() {
-
-            int[] ia = {1, 0, 2, 9, 3, 8, 4, 7, 5, 6, 10};
+        public static void taskTwo()
+        {
+            int[] ia = { 1, 0, 2, 9, 3, 8, 4, 7, 5, 6, 10 };
 
             int ergebnis = ia[2] * ia[8] + ia[4];//=13
 
@@ -33,14 +33,14 @@ namespace L02_ProgrammierenInC__1 {
             Console.WriteLine("ia Length = " + ia.Length);
         }
 
-        public static void taskThree() {
-
-            double kk = 2.97*Math.Pow(10, -19);
-            double[] da = {3.1415, 2.7183, kk};
+        public static void taskThree()
+        {
+            double kk = 2.97 * Math.Pow(10, -19);
+            double[] da = { 3.1415, 2.7183, kk };
         }
 
-        public static void taskFour() {
-
+        public static void taskFour()
+        {
             string a = "eins";
             string b = "zwei";
             string c = "eins";
@@ -56,11 +56,11 @@ namespace L02_ProgrammierenInC__1 {
             Console.WriteLine(zeichen);
         }
 
-        public static void taskFive() {
-
+        public static void taskFive()
+        {
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
-            
+
             /*if(a == b) {
 
                 Console.WriteLine("a und b sind gleich groß");
@@ -72,28 +72,32 @@ namespace L02_ProgrammierenInC__1 {
                 Console.WriteLine("b ist größer als a");
             }*/
 
-            if(a > 3 && b == 6) {
+            if (a > 3 && b == 6)
+            {
 
                 Console.WriteLine("Du hast gewonnen");
-            } else {
+            }
+            else
+            {
 
                 Console.WriteLine("Leider verloren");
             }
         }
 
-        public static void taskSix() {
-
+        public static void taskSix()
+        {
             int i = 1;
 
-            while(i < 11) {
+            while (i < 11)
+            {
 
                 Console.WriteLine(i);
                 i++;
             }
         }
 
-        public static void taskSeven() {
-
+        public static void taskSeven()
+        {
             //string i = Console.ReadLine();
             /*switch (i)
             {
@@ -117,21 +121,21 @@ namespace L02_ProgrammierenInC__1 {
             int i = int.Parse(Console.ReadLine());
             switch (i)
             {
-            case 1:
-                Console.WriteLine("Du hast EINS eingegeben");
-                break;
-            case 2:
-                Console.WriteLine("ZWEI war Deine Wahl");
-                break;
-            case 3:
-                Console.WriteLine("Du tipptest eine DREI");
-                break;
-            case 4:
-                Console.WriteLine("VIER gewinnt");
-                break;
-            default:
-                Console.WriteLine("Die Zahl " + i + " kenne ich nicht");
-                break;
+                case 1:
+                    Console.WriteLine("Du hast EINS eingegeben");
+                    break;
+                case 2:
+                    Console.WriteLine("ZWEI war Deine Wahl");
+                    break;
+                case 3:
+                    Console.WriteLine("Du tipptest eine DREI");
+                    break;
+                case 4:
+                    Console.WriteLine("VIER gewinnt");
+                    break;
+                default:
+                    Console.WriteLine("Die Zahl " + i + " kenne ich nicht");
+                    break;
             }
 
             /*if(i == 1) {
@@ -152,9 +156,9 @@ namespace L02_ProgrammierenInC__1 {
             }*/
         }
 
-        public static void taskEight() {
-
-            string[] someStrings = 
+        public static void taskEight()
+        {
+            string[] someStrings =
             {
                 "Hier",
                 "sehen",
@@ -164,7 +168,7 @@ namespace L02_ProgrammierenInC__1 {
                 "von",
                 "Strings"
             };
-            
+
             for (int i = 0; i < someStrings.Length; i++)
             {
                 Console.WriteLine(someStrings[i]);
@@ -173,7 +177,7 @@ namespace L02_ProgrammierenInC__1 {
 
         public static void taskNine()
         {
-            string[] someStrings = 
+            string[] someStrings =
             {
                 "Hier",
                 "sehen",
@@ -185,17 +189,17 @@ namespace L02_ProgrammierenInC__1 {
             };
 
             int i = 0;
-            do 
+            do
             {
                 Console.WriteLine(someStrings[i]);
                 i++;
             }
             while (i < someStrings.Length);
         }
-        
+
         public static void taskTen()
         {
-            string[] someStrings = 
+            string[] someStrings =
             {
                 "Hier",
                 "sehen",
@@ -210,16 +214,16 @@ namespace L02_ProgrammierenInC__1 {
             while (true)
             {
                 if (i == someStrings.Length)
-                break;
+                    break;
                 Console.WriteLine(someStrings[i]);
-                
+
                 i++;
             }
         }
 
         public static void taskEleven()
         {
-            string[] someStrings = 
+            string[] someStrings =
             {
                 "Hier",
                 "sehen",

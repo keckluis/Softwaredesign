@@ -7,11 +7,11 @@ namespace A2_Zahlensysteme
         static void Main(string[] args)
         {
             int dec = 15;
-            int baseNum = ConvertToBaseFromDecimal(7, dec);
+            int baseNum = ConvertNumberToBaseFromBase(dec, 6, 10);
 
             Console.WriteLine("input dec: " + dec);
             Console.WriteLine("dec to hexal: " + baseNum);
-            Console.WriteLine("hexal back to hex: " + ConvertToDecimalFromBase(7, baseNum));
+            Console.WriteLine("hexal back to hex: " + ConvertNumberToBaseFromBase(baseNum, 10, 6));
         }
 
         static int ConvertDecimalToHexal(int dec)
@@ -44,6 +44,13 @@ namespace A2_Zahlensysteme
             int rest = number - (bases * 10);
 
             return (bases * fromBase) + rest;
+        }
+
+        static int ConvertNumberToBaseFromBase(int number, int toBase, int fromBase)
+        {
+            int dec = ConvertToDecimalFromBase(fromBase, number);
+
+            return ConvertToBaseFromDecimal(toBase, dec);
         }
     }
 }

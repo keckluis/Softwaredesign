@@ -11,7 +11,7 @@ namespace A2_Zahlensysteme
 
             Console.WriteLine("input dec: " + dec);
             Console.WriteLine("dec to hexal: " + baseNum);
-            Console.WriteLine("hexal back to hex: " + ConvertNumberToBaseFromBase(baseNum, 10, 6));
+            Console.WriteLine("hexal back to dec: " + ConvertNumberToBaseFromBase(baseNum, 10, 6));
         }
 
         static int ConvertDecimalToHexal(int dec)

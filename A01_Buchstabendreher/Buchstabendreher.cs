@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace A1_Buchstabendreher
+namespace A01_Buchstabendreher
 {
     class Buchstabendreher
     {

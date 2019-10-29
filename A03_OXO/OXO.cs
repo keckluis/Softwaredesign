@@ -4,11 +4,18 @@ namespace A03_OXO
 {
     class OXO
     {
-        static int[,] board = new int[3, 3];
+        static string[,] board = new string[3, 3];
         static int player;
 
         static void Main(string[] args)
         {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    board[i, j] = "-";
+                }
+            }
             drawBoard();
             player = 1;
             readPlayerInput(player);
@@ -16,96 +23,46 @@ namespace A03_OXO
 
         static void drawBoard()
         {
-            string[] one = new string[3];
-
-            for (int i = 0; i < one.Length; i++)
-            {
-                if (board[0, i] == 0)
-                {
-                    one[i] = " ";
-                }
-                else if (board[0, i] == 1)
-                {
-                    one[i] = "X";
-                }
-                else if (board[0, i] == 2)
-                {
-                    one[i] = "O";
-                }
-            }
-
-            string[] two = new string[3];
-
-            for (int i = 0; i < two.Length; i++)
-            {
-                if (board[1, i] == 0)
-                {
-                    two[i] = " ";
-                }
-                else if (board[1, i] == 1)
-                {
-                    two[i] = "X";
-                }
-                else if (board[1, i] == 2)
-                {
-                    two[i] = "O";
-                }
-            }
-
-            string[] three = new string[3];
-
-            for (int i = 0; i < one.Length; i++)
-            {
-                if (board[2, i] == 0)
-                {
-                    three[i] = " ";
-
-                }
-                else if (board[2, i] == 1)
-                {
-                    three[i] = "X";
-
-                }
-                else if (board[2, i] == 2)
-                {
-                    three[i] = "O";
-                }
-            }
-
-            Console.WriteLine("  - - -  ");
-            Console.WriteLine("| " + one[0] + " " + one[1] + " " + one[2] + " |");
-            Console.WriteLine("| " + two[0] + " " + two[1] + " " + two[2] + " |");
-            Console.WriteLine("| " + three[0] + " " + three[1] + " " + three[2] + " |");
-            Console.WriteLine("  - - -  ");
+            Console.WriteLine(board[0, 0] + " " + board[0, 1] + " " + board[0, 2]);
+            Console.WriteLine(board[1, 0] + " " + board[1, 1] + " " + board[1, 2]);
+            Console.WriteLine(board[2, 0] + " " + board[2, 1] + " " + board[2, 2]);
         }
 
         static void readPlayerInput(int player)
         {
             Console.Write("Spieler " + player + " - Bitte Zug eingeben(<Reihe>.<Spalte>: ");
-            
+
             string input = Console.ReadLine();
 
-            if(input.Length != 3)
-            {
+            if (input.Length != 3)
                 invalidInput();
-            }
 
             string[] s = input.Split(".");
 
             int row = Convert.ToInt32(s[0]);
             int column = Convert.ToInt32(s[1]);
 
-            if(row > 3 || row < 1) 
-            {
+            if (row > 2 || column > 2)
                 invalidInput();
+
+            if (player == 1)
+            {
+                board[row, column] = "X";
             }
-            if(column > 3 || column < 1) 
+            else if (player == 2)
             {
-                invalidInput();
+                board[row, column] = "O";
             }
 
-            board[row,column] = player;
             drawBoard();
+            if (player == 1)
+            {
+                readPlayerInput(2);
+            }
+            else if (player == 2)
+            {
+                readPlayerInput(1);
+            }
         }
 
         static void invalidInput()

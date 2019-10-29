@@ -9,3 +9,14 @@ C:\Users\luis9\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_
 C:\Users\luis9\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.AssemblyInfo.cs
 C:\Users\luis9\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.dll
 C:\Users\luis9\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.pdb
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\bin\Debug\netcoreapp3.0\A03_OXO.exe
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\bin\Debug\netcoreapp3.0\A03_OXO.deps.json
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\bin\Debug\netcoreapp3.0\A03_OXO.runtimeconfig.json
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\bin\Debug\netcoreapp3.0\A03_OXO.runtimeconfig.dev.json
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\bin\Debug\netcoreapp3.0\A03_OXO.dll
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\bin\Debug\netcoreapp3.0\A03_OXO.pdb
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.csprojAssemblyReference.cache
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.AssemblyInfoInputs.cache
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.AssemblyInfo.cs
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.dll
+C:\Users\Luis\Documents\HFU\Softwaredesign\A03_OXO\obj\Debug\netcoreapp3.0\A03_OXO.pdb

@@ -6,10 +6,10 @@ namespace A03_OXO
     {
         static string[,] board = new string[3, 3];
         static int player;
-        static bool gameEnd = false;
 
         static void Main(string[] args)
         {
+            Console.Clear();
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -20,9 +20,7 @@ namespace A03_OXO
             drawBoard();
             player = 1;
         
-
-
-            readPlayerInput(player);
+            keyInput();
         }
 
         static void drawBoard()
@@ -36,83 +34,90 @@ namespace A03_OXO
         {
 
             ConsoleKey choice;
+            int x = 0;
+            int y = 0;
 
             do{
                 choice = Console.ReadKey(true).Key;
             } while(choice != ConsoleKey.D1 && choice != ConsoleKey.D2 && choice != ConsoleKey.D3 && choice != ConsoleKey.D4 && choice != ConsoleKey.D5 && choice != ConsoleKey.D6 && choice != ConsoleKey.D7 && choice != ConsoleKey.D8 && choice != ConsoleKey.D9);
-        }
-
-        static void readPlayerInput(int player)
-        {
-            if(!gameEnd)
+            
+            switch(choice)
             {
-                Console.Write("Spieler " + player + " - Bitte Zug eingeben(<Reihe>.<Spalte>): ");
+                case ConsoleKey.D1:
+                    x = 2;
+                    y = 0;
+                    break;
+                case ConsoleKey.D2:
+                    x = 2;
+                    y = 1;
+                    break;
+                case ConsoleKey.D3:
+                    x = 2;
+                    y = 2;
+                    break;
+                case ConsoleKey.D4:
+                    x = 1;
+                    y = 0;
+                    break;
+                case ConsoleKey.D5:
+                    x = 1;
+                    y = 1;
+                    break;
+                case ConsoleKey.D6:
+                    x = 1;
+                    y = 2;
+                    break;
+                case ConsoleKey.D7:
+                    x = 0;
+                    y = 0;
+                    break;
+                case ConsoleKey.D8:
+                    x = 0;
+                    y = 1;
+                    break;
+                case ConsoleKey.D9:
+                    x = 0;
+                    y = 2;
+                    break;
+            }
 
-                string input = Console.ReadLine();
-
-                if (input.Length != 3)
+            if (board[x, y] == "-")
                 {
-                    invalidInput();
-                    readPlayerInput(player);
-                }
-
-                string[] s = input.Split(".");
-
-                int row = Convert.ToInt32(s[0]);
-                int column = Convert.ToInt32(s[1]);
-
-                if (row > 2 || column > 2)
-                {
-                    invalidInput();
-                    readPlayerInput(player);
-                }
-
-                if (board[row, column] == "-")
-                {
+                    Console.Clear();
                     if (player == 1)
                     {
-                        board[row, column] = "X";
+                        board[x, y] = "X";
                     }
                     else if (player == 2)
                     {
-                        board[row, column] = "O";
+                        board[x, y] = "O";
                     }
 
                     drawBoard();
-                    if(checkWinConditions(row, column))
+                    if(checkWinConditions(x, y))
                     {
                         displayWinMessage(player);
-                        gameEnd = true;
                         return;
                     }
-
                     if(checkIfBoardIsFull()) {
                         displayDrawMessage();
-                        gameEnd = true;
                         return;
                     }
+
+                    if(player == 1)
+                    {
+                        player = 2;
+                    }
+                    else
+                    {
+                        player = 1;
+                    }
+                    keyInput();
                 }
                 else
                 {
-                    invalidInput();
-                    readPlayerInput(player);
+                    keyInput();
                 }
-
-                if(player == 1)
-                {
-                    player = 2;
-                }
-                else
-                {
-                    player = 1;
-                }
-
-                readPlayerInput(player);
-            }
-            else
-            {
-                return;
-            }
         }
 
         static void invalidInput()

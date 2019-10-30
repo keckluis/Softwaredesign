@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Luis\\.nuget\\packages\\": {},
+    "C:\\Users\\luis9\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A03_OXO\\A03_OXO.csproj",
+      "projectUniqueName": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A03_OXO\\A03_OXO.csproj",
       "projectName": "A03_OXO",
-      "projectPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A03_OXO\\A03_OXO.csproj",
-      "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A03_OXO\\obj\\",
+      "projectPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A03_OXO\\A03_OXO.csproj",
+      "packagesPath": "C:\\Users\\luis9\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A03_OXO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\luis9\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"

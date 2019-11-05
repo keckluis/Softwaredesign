@@ -4,12 +4,19 @@ namespace A03_OXO
 {
     class OXO
     {
-        static string[,] board = new string[3, 3];
-        static int player;
+        enum Player
+        {
+            one,
+            two
+        }
 
-        static void Main(string[] args)
+        static string[,] board = new string[3, 3];
+        static Player player;
+        static bool gameEnd = false;
+        static void Main()
         {
             Console.Clear();
+            Console.WriteLine("Eingabe über Numpad/ Zahlentasten (1-9).");
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -18,9 +25,12 @@ namespace A03_OXO
                 }
             }
             drawBoard();
-            player = 1;
-        
-            keyInput();
+            player = Player.one;
+
+            while(!gameEnd)
+            {
+                keyInput();
+            }
         }
 
         static void drawBoard()
@@ -32,16 +42,16 @@ namespace A03_OXO
 
         static void keyInput()
         {
-
             ConsoleKey choice;
             int x = 0;
             int y = 0;
 
-            do{
+            do
+            {
                 choice = Console.ReadKey(true).Key;
-            } while(choice != ConsoleKey.D1 && choice != ConsoleKey.D2 && choice != ConsoleKey.D3 && choice != ConsoleKey.D4 && choice != ConsoleKey.D5 && choice != ConsoleKey.D6 && choice != ConsoleKey.D7 && choice != ConsoleKey.D8 && choice != ConsoleKey.D9);
-            
-            switch(choice)
+            } while (choice != ConsoleKey.D1 && choice != ConsoleKey.D2 && choice != ConsoleKey.D3 && choice != ConsoleKey.D4 && choice != ConsoleKey.D5 && choice != ConsoleKey.D6 && choice != ConsoleKey.D7 && choice != ConsoleKey.D8 && choice != ConsoleKey.D9);
+
+            switch (choice)
             {
                 case ConsoleKey.D1:
                     x = 2;
@@ -81,75 +91,73 @@ namespace A03_OXO
                     break;
             }
 
+            setValue(x, y);
+        }
+
+        static void setValue(int x, int y)
+        {
             if (board[x, y] == "-")
+            {
+                Console.Clear();
+                if (player == Player.one)
                 {
-                    Console.Clear();
-                    if (player == 1)
-                    {
-                        board[x, y] = "X";
-                    }
-                    else if (player == 2)
-                    {
-                        board[x, y] = "O";
-                    }
-
-                    drawBoard();
-                    if(checkWinConditions(x, y))
-                    {
-                        displayWinMessage(player);
-                        return;
-                    }
-                    if(checkIfBoardIsFull()) {
-                        displayDrawMessage();
-                        return;
-                    }
-
-                    if(player == 1)
-                    {
-                        player = 2;
-                    }
-                    else
-                    {
-                        player = 1;
-                    }
-                    keyInput();
+                    board[x, y] = "X";
                 }
                 else
                 {
-                    keyInput();
+                    board[x, y] = "O";
                 }
+
+                drawBoard();
+                if (checkWinConditions(x, y))
+                {
+                    displayWinMessage(player);
+                    gameEnd = true;
+                    return;
+                }
+                else if (checkIfBoardIsFull())
+                {
+                    displayDrawMessage();
+                    gameEnd = true;
+                    return;
+                }
+
+                if (player == Player.one)
+                {
+                    player = Player.two;
+                }
+                else
+                {
+                    player = Player.one;
+                }
+            }
         }
 
-        static void invalidInput()
+        static bool checkWinConditions(int x, int y)
         {
-            Console.WriteLine("Ungültige Eingabe. Bitte versuche es erneut.");
-        }
-
-        static bool checkWinConditions(int row, int column)
-        {
-            string p;
-            if(player == 1)
+            string value;
+            if (player == Player.one)
             {
-                p = "X";
+                value = "X";
             }
             else
             {
-                p = "O";
+                value = "O";
             }
 
-            if(board[row, 0] == p && board[row, 1] == p && board[row, 2] == p) 
+            if (board[x, 0] == value && board[x, 1] == value && board[x, 2] == value)
             {
                 return true;
             }
-            else if(board[0, column] == p && board[1, column] == p && board[2, 1] == p)
+            else if (board[0, y] == value && board[1, y] == value && board[2, y] == value)
             {
                 return true;
             }
-            else if(board[0, 0] == p && board[1, 1] == p && board[2, 2] == p)
+            else if (board[0, 0] == value && board[1, 1] == value && board[2, 2] == value)
             {
                 return true;
             }
-            else if(board[0, 2] == p && board[1,1] == p && board[2,0] == p)
+            else if (board[0, 2] == value && board[1, 1] == value && board[2, 0] == value)
             {
                 return true;
             }
@@ -159,17 +167,17 @@ namespace A03_OXO
             }
         }
 
-        static bool checkIfBoardIsFull() {
-
+        static bool checkIfBoardIsFull()
+        {
             int counter = 0;
 
-            foreach(string s in board)
+            foreach (string s in board)
             {
-                if(s == "-")
+                if (s == "-")
                     counter += 1;
             }
 
-            if(counter > 0)
+            if (counter > 0)
             {
                 return false;
             }
@@ -179,9 +187,19 @@ namespace A03_OXO
             }
         }
 
-        static void displayWinMessage(int player)
+        static void displayWinMessage(Player player)
         {
-            Console.WriteLine("Spieler " + player + " hat gewonnen!");
+            int p;
+
+            if (player == Player.one)
+            {
+                p = 1;
+            }
+            else
+            {
+                p = 2;
+            }
+            Console.WriteLine("Spieler " + p + " hat gewonnen!");
         }
 
         static void displayDrawMessage()

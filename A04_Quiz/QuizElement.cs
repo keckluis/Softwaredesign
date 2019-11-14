@@ -8,5 +8,6 @@ namespace A04_Quiz
         public string Question;
         public string CorrectAnswer;
         public List<string> Answers = new List<string>();
+        public bool wasAnswered = false;
     }
 }

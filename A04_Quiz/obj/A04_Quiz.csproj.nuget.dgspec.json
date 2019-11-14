@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj": {}
+    "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj": {
+    "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
         "projectName": "A04_Quiz",
-        "projectPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
-        "packagesPath": "C:\\Users\\luis9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\obj\\",
+        "projectPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
+        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\luis9\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

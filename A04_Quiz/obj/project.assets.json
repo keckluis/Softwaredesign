@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Luis\\.nuget\\packages\\": {},
+    "C:\\Users\\luis9\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
+      "projectUniqueName": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
       "projectName": "A04_Quiz",
-      "projectPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
-      "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\obj\\",
+      "projectPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\A04_Quiz.csproj",
+      "packagesPath": "C:\\Users\\luis9\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A04_Quiz\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\luis9\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"

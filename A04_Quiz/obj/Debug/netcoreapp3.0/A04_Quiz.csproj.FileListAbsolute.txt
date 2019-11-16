@@ -9,3 +9,14 @@ C:\Users\Luis\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_
 C:\Users\Luis\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_Quiz.pdb
 C:\Users\Luis\Documents\HFU\Softwaredesign\A04_Quiz\obj\Debug\netcoreapp3.0\A04_Quiz.dll
 C:\Users\Luis\Documents\HFU\Softwaredesign\A04_Quiz\obj\Debug\netcoreapp3.0\A04_Quiz.pdb
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_Quiz.exe
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_Quiz.deps.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_Quiz.runtimeconfig.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_Quiz.runtimeconfig.dev.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_Quiz.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\bin\Debug\netcoreapp3.0\A04_Quiz.pdb
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\obj\Debug\netcoreapp3.0\A04_Quiz.csprojAssemblyReference.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\obj\Debug\netcoreapp3.0\A04_Quiz.AssemblyInfoInputs.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\obj\Debug\netcoreapp3.0\A04_Quiz.AssemblyInfo.cs
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\obj\Debug\netcoreapp3.0\A04_Quiz.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\A04_Quiz\obj\Debug\netcoreapp3.0\A04_Quiz.pdb

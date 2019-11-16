@@ -43,57 +43,57 @@ namespace A04_Quiz
         }
 
         public static void StartScene()
-        {
-            if(!allQuestionsAnswered)
+        { 
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("You answered " + credits + " out of " + questionsAnswered + " questions correctly.");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            
+            int i = 0;
+            foreach(QuizElement q in questions)
             {
-                Console.WriteLine("You answered " + credits + " out of " + questionsAnswered + " questions correctly.");
-                
-                int i = 0;
-                foreach(QuizElement q in questions)
-                {
-                    if(q.wasAnswered)
-                        i++;
-                }
+                if(q.wasAnswered)
+                    i++;
+            }
 
-                if(i == questions.Count)
-                {
-                    allQuestionsAnswered = true;
-                    Console.WriteLine("You have answered all question. You can add new quiz elements or quit and start new.");
-                    Console.WriteLine("(1. There are no more questions to answer)");
-                }
-                else
-                {
-                    allQuestionsAnswered = false;
-                    Console.WriteLine("Do you want to answer a question or add a new quiz element?");
-                    Console.WriteLine("1. Answer a question");
-                }
-                
-                Console.WriteLine("2. Add new quiz element");
-                Console.WriteLine("3. Quit");
-                string userInput = Console.ReadLine();
-
-                if(userInput == "1" && !allQuestionsAnswered)
-                {
-                    PlayQuiz();
-                }
-                else if(userInput == "2")
-                {
-                    AddUserQuestion();
-                }
-                else if(userInput == "3")
-                {
-                return;
-                }
-                else
-                {
-                    Console.Clear();
-                    Console.WriteLine("Invalid input. Please try again.");
-                    StartScene();
-                }
+            if(i == questions.Count)
+            {
+                allQuestionsAnswered = true;
+                Console.WriteLine("You have answered all question. You can add new quiz elements or quit and start new.");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("(1. There are no more questions to answer)");
             }
             else
             {
-                return;
+                allQuestionsAnswered = false;
+                Console.WriteLine("Do you want to answer a question or add a new quiz element?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("1. Answer a question");
+            }
+            
+            Console.WriteLine("2. Add new quiz element");
+            Console.WriteLine("3. Quit");
+            Console.Write("> ");
+            string userInput = Console.ReadLine();
+
+            if(userInput == "1")
+            {
+                if(!allQuestionsAnswered)
+                    PlayQuiz();
+            }
+            else if(userInput == "2")
+            {
+                AddUserQuestion();
+            }
+            else if(userInput == "3")
+            {
+                Console.Clear();
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Invalid input. Please try again.");
+                StartScene();
             }
         }
 
@@ -101,71 +101,82 @@ namespace A04_Quiz
         {
             Console.Clear();
 
-            int q = rnd.Next(questions.Count);
-
-            QuizElement question = null;
-
-            if(!questions[q].wasAnswered)
+            if(!allQuestionsAnswered)
             {
-                question = questions[q];
-            }
-            else
-            {
-                PlayQuiz();
-            }
+                int q = rnd.Next(questions.Count);
 
-            question.wasAnswered = true;
+                QuizElement question = new QuizElement();
 
-            List<string> answers = new List<string>();
-            answers = question.Answers;
-            answers.Add(question.CorrectAnswer);
-
-            List<string> shuffledAnswers = new List<string>();
-
-            while(answers.Count != 0)
-            {
-                int r = rnd.Next(answers.Count);
-                shuffledAnswers.Add(answers[r]);
-                answers.RemoveAt(r);
-            }
-
-            Console.WriteLine(question.Question);
-
-            int c = 1;
-            foreach(string a in shuffledAnswers)
-            {
-                Console.WriteLine(c + ". " + a);
-                c++;
-            }
-            
-            string userAnswer = Console.ReadLine();
-            bool validAnswer = false;
-
-            while(!validAnswer)
-            {
-                validAnswer = CheckIfAnswerValid(shuffledAnswers.Count, userAnswer);
-
-                if(!validAnswer)
+                if(!questions[q].wasAnswered)
                 {
-                    Console.WriteLine("Invalid input. Please try again.");
-                    userAnswer = Console.ReadLine();
+                    question = questions[q];
                 }
-            }
+                else
+                {
+                    PlayQuiz();
+                }
 
-            if(CheckAnswer(userAnswer, shuffledAnswers, question))
-            {
-                Console.Clear();
-                Console.WriteLine("Right answer!");
-                credits++;
-                questionsAnswered++;
-                StartScene();
-            }
-            else
-            {
-                Console.Clear();
-                Console.WriteLine("Wrong answer!");
-                questionsAnswered++;
-                StartScene();
+                question.wasAnswered = true;
+
+                List<string> answers = new List<string>();
+                answers = question.Answers;
+                answers.Add(question.CorrectAnswer);
+
+                List<string> shuffledAnswers = new List<string>();
+
+                while(answers.Count != 0)
+                {
+                    int r = rnd.Next(answers.Count);
+                    shuffledAnswers.Add(answers[r]);
+                    answers.RemoveAt(r);
+                }
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine(question.Question);
+                Console.ForegroundColor = ConsoleColor.White;
+
+                int c = 1;
+                foreach(string a in shuffledAnswers)
+                {
+                    Console.WriteLine(c + ". " + a);
+                    c++;
+                }
+                
+                Console.Write("> ");
+                string userAnswer = Console.ReadLine();
+                bool validAnswer = false;
+
+                while(!validAnswer)
+                {
+                    validAnswer = CheckIfAnswerValid(shuffledAnswers.Count, userAnswer);
+
+                    if(!validAnswer)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Invalid input. Please try again.");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("> ");
+                        userAnswer = Console.ReadLine();
+                    }
+                }
+
+                if(CheckAnswer(userAnswer, shuffledAnswers, question))
+                {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Right answer!");
+                    credits++;
+                    questionsAnswered++;
+                    StartScene();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Wrong answer!");
+                    questionsAnswered++;
+                    StartScene();
+                }
             }
         }
 
@@ -205,22 +216,35 @@ namespace A04_Quiz
 
         public static void AddUserQuestion()
         {
+            Console.Clear();
             QuizElement newElement = new QuizElement();
 
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Please type your question:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("> ");
             newElement.Question = Console.ReadLine();
 
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Please type the correct answer:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("> ");
             newElement.CorrectAnswer = Console.ReadLine();
 
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Please type a wrong answer:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("> ");
             newElement.Answers.Add(Console.ReadLine());
 
             bool finished = false;
 
-            while(newElement.Answers.Count < 6 && !finished) 
+            while(!finished) 
             {
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Type another wrong answer or press Enter to save your quiz element:");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("> ");
                 string input = Console.ReadLine();
                 if(input == "")
                 {
@@ -229,12 +253,16 @@ namespace A04_Quiz
                 }
                 else
                 {
-                    
                     newElement.Answers.Add(input);
+
+                    if(newElement.Answers.Count == 5) 
+                        finished = true;
                 }
             }
-
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Your quiz element was added to the question pool.");
+            Console.ForegroundColor = ConsoleColor.White;
             StartScene();
         }
     }

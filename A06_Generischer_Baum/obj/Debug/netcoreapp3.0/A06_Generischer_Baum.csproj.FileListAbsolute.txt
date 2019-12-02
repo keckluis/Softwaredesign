@@ -1,0 +1,11 @@
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\bin\Debug\netcoreapp3.0\A06_Generischer_Baum.exe
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\bin\Debug\netcoreapp3.0\A06_Generischer_Baum.deps.json
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\bin\Debug\netcoreapp3.0\A06_Generischer_Baum.runtimeconfig.json
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\bin\Debug\netcoreapp3.0\A06_Generischer_Baum.runtimeconfig.dev.json
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\bin\Debug\netcoreapp3.0\A06_Generischer_Baum.dll
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\bin\Debug\netcoreapp3.0\A06_Generischer_Baum.pdb
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.csprojAssemblyReference.cache
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.AssemblyInfoInputs.cache
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.AssemblyInfo.cs
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.dll
+C:\Users\Luis\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.pdb

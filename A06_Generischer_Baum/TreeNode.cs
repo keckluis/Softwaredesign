@@ -6,6 +6,7 @@ namespace A06_Generischer_Baum
     class TreeNode<T>
     {
         public T value;
+        public TreeNode<T> parent;
         public List<TreeNode<T>> children;
 
         public TreeNode()
@@ -16,6 +17,7 @@ namespace A06_Generischer_Baum
         public TreeNode(T value)
         {
             this.value = value;
+            this.parent = null;
             this.children = new List<TreeNode<T>>();
         }
 
@@ -26,12 +28,16 @@ namespace A06_Generischer_Baum
 
         public void appendChild(TreeNode<T> child)
         {
-            children.Add(child);
+            if(child.parent != null)
+                child.parent.removeChild(child);
+
+            this.children.Add(child);
+            child.parent = this;
         }
 
         public void removeChild(TreeNode<T> child)
         {
-            children.Remove(child);
+            this.children.Remove(child);
         }
 
         public void printTree()
@@ -50,6 +56,15 @@ namespace A06_Generischer_Baum
                 Console.WriteLine(gen + child.value.ToString());
 
                 printChildren(gen, child);
+            }
+        }
+
+        public void ForEach(Func<string> f)
+        {
+            foreach(TreeNode<T> child in this.children)
+            {
+                f();
+                child.ForEach(f);
             }
         }
     }

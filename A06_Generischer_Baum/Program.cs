@@ -32,6 +32,16 @@ namespace A06_Generischer_Baum
             child1.removeChild(grand12);
 
             root.printTree(); 
+
+            Del func = Func;
+            root.ForEach(Func);
+        }
+
+        public delegate void Del(string value);
+
+        static void Func(string value)
+        {
+            Console.Write(value + " | ");
         }
     }
 }

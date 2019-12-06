@@ -9,11 +9,6 @@ namespace A06_Generischer_Baum
         public TreeNode<T> parent;
         public List<TreeNode<T>> children;
 
-        public TreeNode()
-        {
-            this.children = new List<TreeNode<T>>();
-        }
-
         public TreeNode(T value)
         {
             this.value = value;
@@ -59,12 +54,13 @@ namespace A06_Generischer_Baum
             }
         }
 
-        public void ForEach(Func<string> f)
+        public void ForEach(Action<TreeNode<T>> func)
         {
-            foreach(TreeNode<T> child in this.children)
+            func(this);
+            
+            foreach (var child in children)
             {
-                f();
-                child.ForEach(f);
+                child.ForEach(func);
             }
         }
     }

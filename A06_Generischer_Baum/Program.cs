@@ -9,7 +9,7 @@ namespace A06_Generischer_Baum
         {
             Console.Clear();
 
-            var tree = new TreeNode<String>();
+            var tree = new TreeNode<String>("tree");
 
             var root = tree.createNode("root");
             var child1 = tree.createNode("child1");
@@ -33,15 +33,12 @@ namespace A06_Generischer_Baum
 
             root.printTree(); 
 
-            Del func = Func;
-            root.ForEach(Func);
+            root.ForEach(Func<string>);
         }
 
-        public delegate void Del(string value);
-
-        static void Func(string value)
+        static void Func<T>(TreeNode<T> node)
         {
-            Console.Write(value + " | ");
+            Console.Write(node.value + " | ");
         }
     }
 }

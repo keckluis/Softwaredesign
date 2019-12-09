@@ -1,0 +1,11 @@
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\bin\Debug\netcoreapp3.0\L07_DesignPatterns.exe
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\bin\Debug\netcoreapp3.0\L07_DesignPatterns.deps.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\bin\Debug\netcoreapp3.0\L07_DesignPatterns.runtimeconfig.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\bin\Debug\netcoreapp3.0\L07_DesignPatterns.runtimeconfig.dev.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\bin\Debug\netcoreapp3.0\L07_DesignPatterns.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\bin\Debug\netcoreapp3.0\L07_DesignPatterns.pdb
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\obj\Debug\netcoreapp3.0\L07_DesignPatterns.csprojAssemblyReference.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\obj\Debug\netcoreapp3.0\L07_DesignPatterns.AssemblyInfoInputs.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\obj\Debug\netcoreapp3.0\L07_DesignPatterns.AssemblyInfo.cs
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\obj\Debug\netcoreapp3.0\L07_DesignPatterns.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\L07_DesignPatterns\obj\Debug\netcoreapp3.0\L07_DesignPatterns.pdb

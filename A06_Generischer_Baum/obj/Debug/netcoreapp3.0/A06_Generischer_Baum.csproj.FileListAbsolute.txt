@@ -20,3 +20,5 @@ C:\Users\luis9\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netco
 C:\Users\luis9\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.AssemblyInfo.cs
 C:\Users\luis9\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.dll
 C:\Users\luis9\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.pdb
+C:\Users\luis9\Documents\HFU\Softwaredesign\A06_Generischer_Baum\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\A06_Generischer_Baum\obj\Debug\netcoreapp3.0\A06_Generischer_Baum.csproj.CopyComplete

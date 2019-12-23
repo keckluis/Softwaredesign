@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace A06_Generischer_Baum
@@ -11,19 +10,7 @@ namespace A06_Generischer_Baum
             return new TreeNode(value);
         }
 
-        public void printTree(TreeNode node, string indent = "")
-        {
-            string output = node.ToString();
-            Console.WriteLine(indent + output);
-            indent += "*";
-
-            foreach (var child in node.children)
-            {
-                this.printTree(child, indent);
-            }
-        }
-
-        public class TreeNode: IEnumerable<TreeNode>
+        public class TreeNode
         {
             public delegate void EventHandler();
             public T value;
@@ -51,6 +38,18 @@ namespace A06_Generischer_Baum
                 {
                     EventHandler handler = listeners["AppendChild"];
                     handler();
+                }
+            }
+
+            public void printTree(TreeNode node, string gen = "")
+            {
+                string output = node.ToString();
+                Console.WriteLine(gen + output);
+                gen += "*";
+
+                foreach (var child in node.children)
+                {
+                    this.printTree(child, gen);
                 }
             }
 
@@ -89,6 +88,17 @@ namespace A06_Generischer_Baum
                     return parent.FindRoot();
             }
 
+            public TreeNode FindNode(string LookingFor)
+            {
+                foreach(var child in this)
+                {
+                    if(child.value.ToString().Equals(LookingFor))
+                        return child;
+                }
+
+                return null;
+            }
+
             public void AddListener(string listenerType, EventHandler handler)
             {
                 if (listeners.ContainsKey(listenerType))
@@ -118,14 +128,9 @@ namespace A06_Generischer_Baum
             public IEnumerator<TreeNode> GetEnumerator()
             {
                 yield return this;
-                foreach (var childNode in this.children)
+                foreach(var childNode in this.children)
                     foreach(var child in childNode)
                         yield return child; 
-            }
-
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                return GetEnumerator();
             }
         }
     }

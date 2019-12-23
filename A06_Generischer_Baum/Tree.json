@@ -1,0 +1,37 @@
+{ 
+  "nodes":
+  [
+    {
+        "parent": "root", 
+        "value": "child1"
+    },
+    {
+        "parent": "root",
+        "value": "child2"
+    },
+    {
+        "parent": "child1",
+        "value": "grand11"
+    },
+    {
+        "parent": "child1",
+        "value": "grand12"
+    },
+    {
+        "parent": "child1",
+        "value": "grand13"
+    },
+    {
+        "parent": "child2",
+        "value": "grand21"
+    },
+    {
+        "parent": "child2",
+        "value": "grand22"
+    },
+    {
+        "parent": "grand11",
+        "value": "grandgrand111"
+    }
+  ]   
+}

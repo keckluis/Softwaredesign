@@ -1,0 +1,13 @@
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\obj\Debug\netcoreapp3.0\A05_Quiz_2.csprojAssemblyReference.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\obj\Debug\netcoreapp3.0\A05_Quiz_2.AssemblyInfoInputs.cache
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\obj\Debug\netcoreapp3.0\A05_Quiz_2.AssemblyInfo.cs
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\bin\Debug\netcoreapp3.0\A05_Quiz_2.exe
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\bin\Debug\netcoreapp3.0\A05_Quiz_2.deps.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\bin\Debug\netcoreapp3.0\A05_Quiz_2.runtimeconfig.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\bin\Debug\netcoreapp3.0\A05_Quiz_2.runtimeconfig.dev.json
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\bin\Debug\netcoreapp3.0\A05_Quiz_2.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\bin\Debug\netcoreapp3.0\A05_Quiz_2.pdb
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\obj\Debug\netcoreapp3.0\A05_Quiz_2.csproj.CopyComplete
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\obj\Debug\netcoreapp3.0\A05_Quiz_2.dll
+C:\Users\luis9\Documents\HFU\Softwaredesign\A05_Quiz_2\obj\Debug\netcoreapp3.0\A05_Quiz_2.pdb

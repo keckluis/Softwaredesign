@@ -1,0 +1,71 @@
+{ 
+    "QuizElements":
+    [
+        {
+            "type": "YesNo", 
+            "question": "'The Irishman'(2019) was directed by Martin Scorsese.",
+            "isYesCorrect": "true"
+        },
+        {
+            "type": "YesNo", 
+            "question": "Colin Firth played King George VI in the movie 'The King's Speech'(2010)",
+            "isYesCorrect": "true"
+        },
+        {
+            "type": "YesNo", 
+            "question": "'Shutter Island'(2010) was directed by Guy Ritchie.",
+            "isYesCorrect": "false"
+        },
+        {
+            "type": "MultiChoice",
+            "question": "Who was the director of the movie 'Inception'(2010)?",
+            "correctAnswer": "Christopher Nolan",
+            "wrongAnswers": "Steven Spielberg;James Cameron;Michael Bay"
+        },
+        {
+            "type": "MultiChoice",
+            "question": "What language is the movie 'Pan's Labyrinth'(2006) in?",
+            "correctAnswer": "Spanish",
+            "wrongAnswers": "Portuguese;English;French"
+        },
+        {
+            "type": "MultiChoice",
+            "question": "For which of these movies did Quentin Tarantino win a Best Writing/Screenplay Oscar?",
+            "correctAnswer": "Pulp Fiction(1994)",
+            "wrongAnswers": "Reservoir Dogs(1992);The Hateful Eight(2015);Inglourious Basterds(2009)"
+        },
+        {
+            "type": "FreeText",
+            "question": "Who played Neil Armstrong in the movie 'First Man'(2018)?",
+            "correctAnswer": "Ryan Gosling"
+        },
+        {
+            "type": "FreeText",
+            "question": "What is the title of Guy Ritchie's upcoming 2020 movie?",
+            "correctAnswer": "The Gentlemen"
+        },
+        {
+            "type": "FreeText",
+            "question": "What is the name of the villain in 'Star Wars: Episode IV - A New Hope'(1977)? ",
+            "correctAnswer": "Darth Vader"
+        },
+        {
+            "type": "Estimate",
+            "question": "When was the movie 'Gladiator' by Ridley Scott  released?",
+            "correctAnswer": "2000",
+            "tolerance": "1"
+        },
+        {
+            "type": "Estimate",
+            "question": "How many sequels are planned for James Cameron's 'Avatar'(2009)",
+            "correctAnswer": "4",
+            "tolerance": "0"
+        },
+        {
+            "type": "Estimate",
+            "question": "How high was the budget for 'Pirates of the Caribbean: On Stranger Tides'(2011) in million?",
+            "correctAnswer": "379",
+            "tolerance": "20"
+        }
+    ]   
+}

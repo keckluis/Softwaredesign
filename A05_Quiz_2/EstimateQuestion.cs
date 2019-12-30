@@ -70,5 +70,59 @@ namespace A05_Quiz2
                 return false; 
             } 
         }
+
+        public void AddNew()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter the question:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(">");
+            this.question = Console.ReadLine();
+
+            bool isNumber1 = false;
+
+            while(!isNumber1)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Enter the correct answer:");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(">");
+                string userInput = Console.ReadLine();
+
+                if(validAnswer(userInput))
+                {
+                    isNumber1 = true;
+                    this.correctAnswer = Int32.Parse(userInput);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please try again.");
+                }
+            }
+
+            bool isNumber2 = false;
+
+            while(!isNumber2)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Enter the tolerance:");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(">");
+                string userInput = Console.ReadLine();
+
+                if(validAnswer(userInput))
+                {
+                    isNumber2 = true;
+                    this.tolerance = Int32.Parse(userInput);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please try again.");
+                }
+            }
+        }
     }
 }

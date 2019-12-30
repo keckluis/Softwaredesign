@@ -2,7 +2,7 @@ using System;
 
 namespace A05_Quiz2
 {
-    class YesNoQuestion : QuizElement
+    class TrueFalseQuestion : QuizElement
     {
         public bool isYesCorrect;
 
@@ -50,6 +50,35 @@ namespace A05_Quiz2
                 Console.WriteLine("Wrong answer!");
                 return false;
             }
+        }
+
+        public void AddNew()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter the statement:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(">");
+            this.question = Console.ReadLine();
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Is the statement true or false?");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1. true");
+            Console.WriteLine("2. false");
+            Console.Write(">");
+            
+            string userInput = Console.ReadLine();
+
+            if(userInput == "1")
+            {
+               this.isYesCorrect = true;
+            }  
+            else if(userInput == "2")
+            {
+                this.isYesCorrect = false;
+            } 
         }
     }
 }

@@ -98,5 +98,52 @@ namespace A05_Quiz2
                 return false;
             } 
         }
+
+        public void AddNew()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter the question:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(">");
+            this.question = Console.ReadLine();
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter the correct answer:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(">");
+            this.correctAnswer = Console.ReadLine();
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter a wrong answer:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(">");
+            this.wrongAnswers = new List<string>();
+            this.wrongAnswers.Add(Console.ReadLine());
+
+            int i = 0;
+
+            while(i < 4)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Enter another wrong answer or press 'Enter' to finish:");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(">");
+
+                string s = Console.ReadLine();
+                if(s != "")
+                {
+                    this.wrongAnswers.Add(s);
+                    i++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
     }
 }

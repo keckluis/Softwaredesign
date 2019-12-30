@@ -17,13 +17,13 @@ namespace A05_Quiz2
             QuizElementLoader loader = new QuizElementLoader();
 
             quizElements = loader.LoadJson("QuizElements.json");
-            StartScene();
+            MainMenu();
         }
 
-        public static void StartScene()
+        public static void MainMenu()
         { 
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine("You answered " + credits + " out of " + questionsAnswered + " quizElements correctly.");
+            Console.WriteLine("You answered " + credits + " out of " + questionsAnswered + " Questions correctly.");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Cyan;
             
@@ -39,17 +39,18 @@ namespace A05_Quiz2
                 allQuestionsAnswered = true;
                 Console.WriteLine("You have answered all question. You can quit and start new.");
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("(1. There are no more quizElements to answer)");
+                Console.WriteLine("(1. There are no more questions to answer)");
             }
             else
             {
                 allQuestionsAnswered = false;
-                Console.WriteLine("Do you want to answer a question or quit?");
+                Console.WriteLine("Do you want to answer a question or add a new quiz element?");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("1. Answer a question");
             }
-            
-            Console.WriteLine("2. Quit");
+
+            Console.WriteLine("2. Add new quiz element");
+            Console.WriteLine("3. Quit");
             Console.Write("> ");
             string userInput = Console.ReadLine();
 
@@ -58,9 +59,13 @@ namespace A05_Quiz2
                 if(!allQuestionsAnswered)
                     PlayQuiz();
                 else
-                    StartScene();
-            }            
+                    MainMenu();
+            }  
             else if(userInput == "2")
+            {
+                AddNewQuizElement();
+            }       
+            else if(userInput == "3")
             {
                 Console.Clear();
             }
@@ -68,7 +73,7 @@ namespace A05_Quiz2
             {
                 Console.Clear();
                 Console.WriteLine("Invalid input. Please try again.");
-                StartScene();
+                MainMenu();
             }
         }
 
@@ -83,22 +88,69 @@ namespace A05_Quiz2
                     bool correctAnswer = quizElements[q].AnswerQuestion();
 
                     if(correctAnswer)
-                    {
                         credits++;
-                        questionsAnswered++;
-                        StartScene();
-                    }
-                    else
-                    {
-                        questionsAnswered++;
-                        StartScene();
-                    }
+
+                    questionsAnswered++;
+                    MainMenu();
                 }
                 else
                 {
                     PlayQuiz();
                 }
             }
+        }
+
+        public static void AddNewQuizElement()
+        {
+            Console.Clear();
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Choose the type of quiz element.");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1. Multiple Choice");
+            Console.WriteLine("2. True or False");
+            Console.WriteLine("3. Free Text Answer");
+            Console.WriteLine("4. Estimate");
+
+            Console.Write("> ");
+            string userInput = Console.ReadLine();
+
+            if(userInput == "1")
+            {
+                MultiChoiceQuestion mc = new MultiChoiceQuestion();
+                mc.AddNew();
+
+                quizElements.Add(mc);
+            }  
+            else if(userInput == "2")
+            {
+                TrueFalseQuestion tf = new TrueFalseQuestion();
+                tf.AddNew();
+
+                quizElements.Add(tf); 
+            }       
+            else if(userInput == "3")
+            {
+                FreeTextQuestion ft = new FreeTextQuestion();
+                ft.AddNew();
+
+                quizElements.Add(ft);
+            }
+            else if(userInput == "4")
+            {
+                EstimateQuestion es = new EstimateQuestion();
+                es.AddNew();
+
+                quizElements.Add(es);
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Invalid input. Please try again.");
+                AddNewQuizElement();
+            }
+
+            MainMenu();
         }
     }
 }

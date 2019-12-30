@@ -39,17 +39,17 @@ namespace A05_Quiz2
                         }
                         else if(row["type"].ToString().Equals("YesNo"))
                         {
-                            YesNoQuestion yn = new YesNoQuestion();
-                            yn.question = row["question"].ToString();
+                            TrueFalseQuestion tf = new TrueFalseQuestion();
+                            tf.question = row["question"].ToString();
                             if(row["isYesCorrect"].ToString().Equals("true"))
                             {
-                                yn.isYesCorrect = true;
+                                tf.isYesCorrect = true;
                             }
                             else if(row["isYesCorrect"].ToString().Equals("false"))
                             {
-                                yn.isYesCorrect = false;
+                                tf.isYesCorrect = false;
                             }
-                            quizElements.Add(yn);
+                            quizElements.Add(tf);
                         }
                         else if(row["type"].ToString().Equals("FreeText"))
                         {

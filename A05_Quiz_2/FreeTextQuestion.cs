@@ -35,5 +35,22 @@ namespace A05_Quiz2
                 return false;
             }
         }
+
+        public void AddNew()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter the question:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(">");
+            this.question = Console.ReadLine();
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter the correct answer:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(">");
+            this.correctAnswer = Console.ReadLine(); 
+        }
     }
 }

@@ -10,9 +10,9 @@ namespace A05_Quiz2
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(this.question);
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("1. true");
             Console.WriteLine("2. false");
-            Console.ForegroundColor = ConsoleColor.White;
 
             Console.Write("> ");
             string userAnswer = Console.ReadLine();

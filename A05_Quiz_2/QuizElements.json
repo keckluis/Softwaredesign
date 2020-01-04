@@ -2,17 +2,17 @@
     "QuizElements":
     [
         {
-            "type": "YesNo", 
+            "type": "TrueFalse", 
             "question": "'The Irishman'(2019) was directed by Martin Scorsese.",
             "isYesCorrect": "true"
         },
         {
-            "type": "YesNo", 
+            "type": "TrueFalse", 
             "question": "Colin Firth played King George VI in the movie 'The King's Speech'(2010)",
             "isYesCorrect": "true"
         },
         {
-            "type": "YesNo", 
+            "type": "TrueFalse", 
             "question": "'Shutter Island'(2010) was directed by Guy Ritchie.",
             "isYesCorrect": "false"
         },

@@ -37,7 +37,7 @@ namespace A05_Quiz2
                             mc.wrongAnswers = wrongAnswers;
                             quizElements.Add(mc);
                         }
-                        else if(row["type"].ToString().Equals("YesNo"))
+                        else if(row["type"].ToString().Equals("TrueFalse"))
                         {
                             TrueFalseQuestion tf = new TrueFalseQuestion();
                             tf.question = row["question"].ToString();

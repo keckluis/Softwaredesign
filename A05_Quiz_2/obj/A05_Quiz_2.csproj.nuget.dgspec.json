@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj": {}
+    "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj": {
+    "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj",
+        "projectUniqueName": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj",
         "projectName": "A05_Quiz_2",
-        "projectPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj",
-        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luis\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\obj\\",
+        "projectPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\A05_Quiz_2.csproj",
+        "packagesPath": "C:\\Users\\luis9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luis9\\Documents\\HFU\\Softwaredesign\\A05_Quiz_2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\luis9\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

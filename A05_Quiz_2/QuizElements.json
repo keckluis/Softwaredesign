@@ -46,8 +46,8 @@
         },
         {
             "type": "FreeText",
-            "question": "What is the name of the villain in 'Star Wars: Episode IV - A New Hope'(1977)? ",
-            "correctAnswer": "Darth Vader"
+            "question": "What is the name of the protagonist in 'Star Wars: Episode IV - A New Hope'(1977)? ",
+            "correctAnswer": "Luke Skywalker"
         },
         {
             "type": "Estimate",

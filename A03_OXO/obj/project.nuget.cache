@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WRjsDP7NXMsI5NWHeyLFIU62i3zTgR8TCxuD2T+zGCdt9f5CXK8PtPJ0BHqnQ6C00wG9YEKgC1MIbXom25pKXw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Luis\\Documents\\Repositories\\Softwaredesign\\A03_OXO\\A03_OXO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luis\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Luis\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
